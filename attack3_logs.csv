@@ -1,0 +1,9 @@
+timestamp,event_id,source_ip,destination_ip,destination_port,protocol,event_type,requests_per_second,baseline_rps,response_code,action,severity,details
+2026-10-31T10:20:00Z,DOS-0001,198.51.100.90,192.0.2.20,443,TCP,traffic_spike,120,35,200,monitor,medium,Request rate rose above baseline
+2026-10-31T10:20:10Z,DOS-0002,198.51.100.90,192.0.2.20,443,TCP,traffic_spike,420,35,429,rate_limited,high,High request volume; rate limiting engaged
+2026-10-31T10:20:20Z,DOS-0003,198.51.100.91,192.0.2.20,443,TCP,traffic_spike,610,35,429,rate_limited,high,Elevated traffic from additional source
+2026-10-31T10:20:30Z,DOS-0004,198.51.100.92,192.0.2.20,443,TCP,service_latency,850,35,503,alerted,critical,Service latency increased and some requests returned 503
+2026-10-31T10:20:40Z,DOS-0005,198.51.100.93,192.0.2.20,443,TCP,availability_check,850,35,503,alerted,critical,Health check failed during sustained traffic surge
+2026-10-31T10:20:50Z,DOS-0006,198.51.100.90,192.0.2.20,443,TCP,mitigation_enabled,700,35,429,mitigation_enabled,high,Traffic filtering and rate limiting enabled
+2026-10-31T10:21:10Z,DOS-0007,198.51.100.90,192.0.2.20,443,TCP,traffic_decrease,160,35,200,monitor,medium,Traffic reduced after mitigation
+2026-10-31T10:22:00Z,DOS-0008,203.0.113.120,192.0.2.20,443,TCP,availability_check,42,35,200,resolved,info,Service returned to normal response behavior

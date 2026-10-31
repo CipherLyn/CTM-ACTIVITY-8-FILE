@@ -1,0 +1,9 @@
+timestamp,event_id,source_ip,destination_ip,destination_port,protocol,username,event_type,attempt_count,status,severity,details
+2026-10-31T08:14:02Z,BF-0001,198.51.100.23,192.0.2.10,22,TCP,admin,failed_login,1,failed,medium,SSH authentication failure
+2026-10-31T08:14:07Z,BF-0002,198.51.100.23,192.0.2.10,22,TCP,admin,failed_login,2,failed,medium,Repeated SSH authentication failure
+2026-10-31T08:14:12Z,BF-0003,198.51.100.23,192.0.2.10,22,TCP,administrator,failed_login,3,failed,high,Multiple username attempts from same source
+2026-10-31T08:14:17Z,BF-0004,198.51.100.23,192.0.2.10,22,TCP,root,failed_login,4,failed,high,Repeated login failures in short interval
+2026-10-31T08:14:22Z,BF-0005,198.51.100.23,192.0.2.10,22,TCP,admin,account_lockout,5,blocked,critical,Account temporarily locked after repeated failures
+2026-10-31T08:15:01Z,BF-0006,203.0.113.44,192.0.2.10,22,TCP,test,failed_login,1,failed,low,Single failed login; monitor for repetition
+2026-10-31T08:16:30Z,BF-0007,198.51.100.23,192.0.2.10,22,TCP,admin,rate_limit_triggered,6,blocked,high,Source rate-limited by authentication protection
+2026-10-31T08:17:10Z,BF-0008,203.0.113.44,192.0.2.10,22,TCP,student,successful_login,1,success,info,Successful login from a separate source; verify authorization
